@@ -1,6 +1,11 @@
 #! /usr/bin/env python3
 # coding: utf-8;
 
+"""
+    Dyninter <-> The dynamic python interpreter
+    Author: RidoineEl <ridoineelofficiel@gmail.com/>
+"""
+
 import argparse
 
 def parse_object():
