@@ -12,7 +12,7 @@ START
     last_content <-- ""
     
     while (not CTR+C):  
-        (* Infinity Loop )
+        (* Infinity Loop *)
         
         content <-- READ(filepath)
         
@@ -25,3 +25,5 @@ START
     EndWhile
     
 END
+
+**Author**: RidoineEl <ridoineelofficiel@gmail.com>
