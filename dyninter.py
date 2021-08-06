@@ -22,10 +22,10 @@ last_content = ""
 while True:
     _file = open(filepath, "r")
     
-    # the file code (content)
+    # file code (content)
     content =  ''.join(_file.readlines())
 
-    if content != last_content:
+    if (content != last_content) :
         print("<================= Start Execution ===================>\n")
         exec(content)
         print("\n<================= End Execution ===================>\n")
