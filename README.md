@@ -9,17 +9,19 @@ VAR content, last_content : String
 
 START
 
+    last_content <-- ""
+    
     while (not CTR+C):  
         (* Infinity Loop )
         
-        content = READ(filepath)
+        content <-- READ(filepath)
         
         If (content <> last_content) :
             (* Execute file (by content) *)
-            
             Execute(content)
             
-            last_content <- content
+            last_content <-- content
         EndIf
     EndWhile
+    
 END
