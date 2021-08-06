@@ -9,7 +9,7 @@ VAR content, last_content : String
 
 START
 
-    while (non touche_CTR+C):  
+    while (not CTR+C):  
         (* Infinity Loop )
         
         content = READ(file)
