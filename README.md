@@ -4,7 +4,7 @@ Python Code interpreter at each modification
 
 ALGO
 
-VAR file: file
+VAR filepath: file
 VAR content, last_content : String
 
 START
@@ -12,7 +12,7 @@ START
     while (not CTR+C):  
         (* Infinity Loop )
         
-        content = READ(file)
+        content = READ(filepath)
         
         If (content <> last_content) :
             (* Execute file (by content) *)
