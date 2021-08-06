@@ -26,4 +26,4 @@ START
     
 END
 
-**Author**: RidoineEl <ridoineelofficiel@gmail.com>
+**Author**: RidoineEl <ridoineelofficiel@gmail.com/>
