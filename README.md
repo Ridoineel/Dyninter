@@ -1,5 +1,5 @@
 # Dynamic-Interpreter
-Python Code interpreter at each modification
+Python Code interpreter at each file's modification (save)
 
 **Use -f or --file option to specify the input file**:
     ex: ./dyninter.py -f test.py
