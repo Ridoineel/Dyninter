@@ -1,6 +1,9 @@
 # Dynamic-Interpreter
 Python Code interpreter at each modification
 
+**Use -f or --file option to specify the input file**:
+    ex: ./dyninter.py -f test.py
+
 
 ALGO
 
