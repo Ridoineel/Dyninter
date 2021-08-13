@@ -8,7 +8,7 @@ Python Code interpreter at each file's modification (save)
 ALGO
 
 VAR filepath: file
-VAR content, last_content : String
+    content, last_content : String
 
 START
 
