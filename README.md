@@ -1,13 +1,15 @@
 # Dyninter: Dynamic python program interpreter and watcher.
 
-\# Python program monitor
+\# Python program monitor <br/>
 \# Python program watcher
 
 Python Code interpreter at each file's modification.
 
->**Use -f or --file option to specify the input file**:
-    ex: ./dyninter.py -f test.py
-
+>**Use -f or --file option to specify the input file**: <br/>
+    ex: 
+    ```bash 
+        ./dyninter.py -f test.py
+    ```
 
 _____________
 
@@ -26,7 +28,7 @@ START
     while (not CTR+C):  
         (* Infinity Loop *)
 
-        tmp_modification_time <-- <-- file modification time 
+        tmp_modification_time <-- file modification time 
 
         content <-- READ(filepath)
         
