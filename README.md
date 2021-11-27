@@ -29,10 +29,8 @@ START
         (* Infinity Loop *)
 
         tmp_modification_time <-- file modification time 
-
-        content <-- READ(filepath)
         
-        If (content <> last_content) :
+        If (last_modification_time <> tmp_modification_time) :
             (* Execute file *)
             Execute(file_path)
             
