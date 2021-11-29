@@ -23,22 +23,20 @@ class Display:
 	def header(file_path, filename):
 		# version of this
 		print(Color.primary(f"[{prog_name}] {prog_version}"))
-		time.sleep(1.5)
+		time.sleep(1.2)
 
 		# Starting
 		print(Color.primary(f"[{prog_name}] Starting `python3 {file_path}"))
-		time.sleep(1.5)
+		time.sleep(1.2)
 
 		# running
 		print(Color.primary(f"[{prog_name}] Running"), end="")
 		sys.stdout.flush()
 
-		for i in range(4):
+		for i in range(3):
 			print(end=Style.bold(Color.primary(".")))
 			sys.stdout.flush()
 			time.sleep(0.7)
-		
-		time.sleep(1)
 
 	@staticmethod
 	def onChange():
@@ -46,7 +44,7 @@ class Display:
 
 		print(Color.primary(f"[{prog_name}] Modification..."))
 
-		time.sleep(1.5)
+		time.sleep(1)
 
 	@staticmethod
 	def onError():
