@@ -5,6 +5,9 @@ import argparse
 # 
 sys.path.append(os.path.dirname(__file__))
 from Class import Color, Display
+from variables import *
+
+parentDir = os.path.dirname(os.path.dirname(__file__))
 
 def parse_object():
     """ Return command line arguments object """
@@ -20,7 +23,9 @@ def getFilePath():
 	if not arg_datas.file:
 		print(Color.warning("Warning: Missing file path (ex: -f example.py)"))
 		print()
-		os.system("./main.py --help")
+
+		prog_path = os.path.join(parentDir, prog_name + ".py")
+		os.system(f"{prog_path} --help")
 
 		exit()
 
