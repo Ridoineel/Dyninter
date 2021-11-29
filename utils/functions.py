@@ -4,7 +4,7 @@ import argparse
 
 # 
 sys.path.append(os.path.dirname(__file__))
-from Class import Color
+from Class import Color, Display
 
 def parse_object():
     """ Return command line arguments object """
@@ -28,4 +28,8 @@ def getFilePath():
 
 def runFile(file_path):
 	os.system("cls|clear")
-	os.system(f"python3 {file_path}")
+	
+	if os.system(f"python3 {file_path}") != 0: # Error
+		Display.onError()
+	else:
+		Display.waitingChange()
