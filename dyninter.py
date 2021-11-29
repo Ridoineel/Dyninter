@@ -15,7 +15,6 @@ def main():
 	Display.header(file_path, filename)
 
 	runFile(file_path)
-	Display.waitingChange()
 
 	edit_time = os.path.getmtime(file_path)
 
@@ -26,7 +25,6 @@ def main():
 			Display.onChange()
 
 			runFile(file_path)
-			Display.waitingChange()
 
 			edit_time = tmp_edit_time
 
