@@ -7,7 +7,7 @@ Python Code interpreter at each file's modification.
 
 >**Use -f or --file option to specify the input file**: <br/>
     ex: 
-    ```bash 
+    ``` 
         ./dyninter.py -f test.py
     ```
 
